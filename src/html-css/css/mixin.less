@@ -20,18 +20,21 @@ color_bg and font
 @c-gray-dark: #e5e5e5;
 
 //blue
-@c-blue-light: #e9f4f9;
+
+@c-blue-light: #29b0e7;
 @c-blue-dark: #283b52;
-@c-blue-uwest: #262a36;
+@c-basic-blue: #2a2e6d;
 
-@c-basic-blue: #5279ff;
+@c-light-pink: #f8f2e4;
 
-//orange
-@c-orange-uwest: #fe713c;
+//text
+@c-text: #525763;
+@c-text-orange: #cc6633;
 
 /*
 basic variable
 */
+
 @size: 1px;
 @radius: 0px;
 @sizing: border-box;
@@ -72,6 +75,7 @@ basic variable
     font-weight: 600;
     font-style: normal
 }
+
 @font-face {
     font-family: 'Gilroy';
     src: url('../fonts/gilroy-extrabold-webfont.eot');
@@ -102,6 +106,7 @@ basic variable
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'RobotoCondensed-Regular';
     src: url(../fonts/RobotoCondensed-Regular.ttf) format('truetype');
@@ -115,6 +120,7 @@ basic variable
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'DroidSerif-Italic';
     src: url(../fonts/DroidSerif-Italic.ttf) format('truetype');
@@ -122,27 +128,26 @@ basic variable
     font-style: normal;
 }
 
-
 .f-light() {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-weight: 300;
     font-style: normal;
 }
 
 .f-regular() {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-weight: 400;
     font-style: normal;
 }
 
 .f-semibold() {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-weight: 600;
     font-style: normal;
 }
 
 .f-bold() {
-    font-family: 'Open Sans', sans-serif;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
     font-weight: 700;
     font-style: normal;
 }
@@ -153,71 +158,41 @@ basic variable
     font-style: normal;
 }
 
-.f-uwest-ahamono() {
-    font-family: 'Ahamono', sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-
-.f-uwest-montserrat() {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.f-playfair-regular {
-    font-family: 'Playfair Display', serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.f-playfair-bold{
-    font-family: 'Playfair Display', serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.f-gilroy-bold{
-    font-family: 'Gilroy', serif;
-    font-weight: 700;
-    font-style: normal;
-}
-.f-eroded-bold{
-    font-family: 'Eroded2Much', serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.f-roboto-bold{
+.f-roboto-bold {
     font-family: 'RobotoCondensed-Bold', serif;
     font-weight: 700;
     font-style: normal;
 }
-.f-roboto-semibold{
+
+.f-roboto-semibold {
     font-family: 'RobotoCondensed-Regular', serif;
     font-weight: 600;
     font-style: normal;
 }
-.f-roboto-regular{
+
+.f-roboto-regular {
     font-family: 'RobotoCondensed-Regular', serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.f-droid-bold{
+.f-droid-bold {
     font-family: 'DroidSerif', serif;
     font-weight: 700;
     font-style: normal;
 }
 
-.f-droid-regular{
+.f-droid-regular {
     font-family: 'DroidSerif', serif;
     font-weight: 400;
     font-style: normal;
 }
 
-.f-droid-italic{
+.f-droid-italic {
     font-family: 'DroidSerif-Italic', serif;
     font-weight: 400;
     font-style: normal;
 }
-
 
 //clearfix
 .cf {
@@ -263,6 +238,7 @@ basic variable
 .ul-reset() {
     margin: 0;
     padding: 0;
+
     li {
         list-style: none;
     }
