@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"/>
+    <title>Contact page</title>
+
+    <link rel="shortcut icon" href="img/favicon.ico"/>
+
+
+    <link rel="stylesheet" type="text/css" href="css/main.css"/>
+    <!--[if lt IE 9]>
+    <link rel="stylesheet" type="text/css" href="css/ie.css"/>
+    <![endif]-->
+    <!---->
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script src="js/production/production.js"></script>
+    <script src="http://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <script>
+        var myMap;
+        var s;
+        ymaps.ready(init);
+
+        function init() {
+            myMap = new ymaps.Map('yamap', {
+                center: [53.935824, 27.581558],
+                zoom: 17,
+                controls: ['smallMapDefaultSet']
+
+            });
+
+            myPlacemark = new ymaps.Placemark(myMap.getCenter(), {
+                hintContent: 'Собственный значок метки'
+            }, {
+                iconLayout: 'default#image',
+                iconImageHref: 'img/map-pin.png',
+                iconImageSize: [64, 85],
+                iconImageOffset: [-30, -85]
+            });
+
+            myMap.geoObjects.add(myPlacemark);
+        }
+
+    </script>
+<body>
+
+<div class="page contacts">
+    <div class="wrap">
+        <div class="wrap-container">
+            <!--header-->
+            <div class="header">
+                <div class="container">
+                    <div class="logo">
+                        <h1>
+                            <a href=""></a>
+                        </h1>
+                    </div>
+                    <div class="menu">
+                        <div class="mob-toggle"></div>
+                        <div class="menu-close" data-toggle="modal" data-target="#menuMobile"></div>
+                        <div class="modal fade" id="menuMobile">
+                            <ul>
+                                <li><a href="#"><span>Главная</span></a></li>
+                                <li><a href="#"><span>О компании</span></a></li>
+                                <li><a href="#"><span>Каталог</span></a></li>
+                                <li><a href="#"><span>Полезная информация</span></a></li>
+                                <li><a href="#"><span>Поставщики</span></a></li>
+                                <li><a href="#"><span>Новости</span></a></li>
+                                <li><a href="#"><span>Вакансии</span></a></li>
+                                <li><a href="#"><span>Контакты</span></a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END_header-->
+
+            <!--wrapper-CONTENT-->
+            <div class="wrap-content">
+                <div class="section-header">
+                    <div class="container">
+                        <div class="animated-hidden" data-animated="fadeInDown">
+                            <h2>Контакты</h2>
+                        </div>
+                        <a href="" class="promotion-box animated-hidden" data-animated="fadeInRightBig">
+                            Перейти к товарам
+                        </a>
+                    </div>
+                </div>
+
+                <div class="section-content">
+                    <div class="container">
+                        <div class="map-wrapper">
+                            <div class="w25 animated-hidden animated-wrapper" data-animated="fadeIn">
+                                <h3>Как нас найти</h3>
+                                <ul class="contact-list">
+                                    <li class="animated-hidden" data-animated="fadeInLeftBig"
+                                        data-animated-t="fadeInRightBig" data-animated-m="fadeIn" data-delay="100">
+                                        <i class="ic ic-address"></i>
+                                        <span>Республика Беларусь, Минск, 220004, ул. Некрасово 112</span>
+                                    </li>
+                                    <li class="animated-hidden" data-animated="fadeInLeftBig"
+                                        data-animated-t="fadeInRightBig" data-animated-m="fadeIn" data-delay="300">
+                                        <i class="ic ic-tel"></i>
+                                        <a href="tel:+375 29 665-11-18">+375 17 546-19-10</a>
+                                    </li>
+                                    <li class="animated-hidden" data-animated="fadeInLeftBig"
+                                        data-animated-t="fadeInRightBig" data-animated-m="fadeIn" data-delay="500">
+                                        <i class="ic ic-fax"></i>
+                                        <a href="tel:+375 17 222-11-18">+375 17 222-11-18</a>
+                                    </li>
+                                    <li class="animated-hidden" data-animated="fadeInLeftBig"
+                                        data-animated-t="fadeInRightBig" data-animated-m="fadeIn" data-delay="700">
+                                        <i class="ic ic-mail"></i>
+                                        <a href="mailto:info@troya.ru">info@troya.ru</a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="w75">
+                                <div id="yamap"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--END_wrapper-CONTENT-->
+        </div>
+    </div>
+    <div class="footer">
+        <div class="info-container">
+            <div class="container">
+                <div class="toggle" data-id="f-contact">Контакты<i class="arrow"></i></div>
+                <div class="f-contact">
+                    <ul class="phones-list">
+                        <li>+375 17 222-11-18</li>
+                        <li>info@troya.ru</li>
+                        <li>troya</li>
+                        <i></i>
+                    </ul>
+                    <ul class="adress-list">
+                        <li>Главная</li>
+                        <li>О компании</li>
+                        <li>Каталог</li>
+                        <li>Полезная информация</li>
+                        <li>Наши поставщики</li>
+                        <i></i>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
