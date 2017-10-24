@@ -174,6 +174,10 @@ function showSliderScreen(sliderCarousel) {
     }
 }
 
+function initSupplierSlider() {
+    // var $slide = $img-container
+}
+
 function showSliderScreenMin(sliderCarousel) {
     var $sliderOption = {
         arrows: false,
