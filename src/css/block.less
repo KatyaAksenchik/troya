@@ -508,12 +508,36 @@
             }
 
             tbody {
+                background-color: #fff;
+
                 td {
                     border: solid 1px #c3c3c3;
+                    padding: 15px 10px;
+                    text-align: center;
+
+                    &.pdf {
+                        background: linear-gradient(to bottom, #fbfcfe 0%, #d6dbee 50%, #abb3c8 100%);
+                        min-width: 140px;
+
+                        span {
+                            display: block;
+                            margin-bottom: 5px;
+                        }
+
+                        img {
+                            width: 45px;
+                        }
+                    }
                 }
             }
         }
     }
+}
+
+.section-connect {
+    padding: 1em 0;
+    background-color: #cdddea;
+    text-align: center;
 }
 
 .catalog-title {
